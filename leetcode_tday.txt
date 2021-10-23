@@ -1,0 +1,14 @@
+https://leetcode.com/problems/queens-that-can-attack-the-king/
+king goes in all 8 directions. once it hits a queen, add to list and stop going in that direction.
+
+https://leetcode.com/problems/redundant-connection/
+union by size
+
+https://leetcode.com/problems/verifying-an-alien-dictionary/
+lexographic comparison of first differing letter. If w1 prefix of w2, w1 must occur first.
+
+https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/
+DP
+
+https://leetcode.com/problems/partition-labels/solution/
+partitioning
