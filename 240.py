@@ -2,12 +2,12 @@
 
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        return self.dfs(matrix,0,0,target,False)
-    
-    def dfs(self,matrix,r,c,target, result):
-        if matrix[r][c] == target: result = True
+        ROWS,COLS = len(matrix),len(matrix[0])
+        r,c = 0, COLS - 1
         
-        if r+1 in range(len(matrix)) : result = self.dfs(matrix,r+1,c,target,result)
-        if c+1 in range(len(matrix[0])): result = self.dfs(matrix,r,c+1,target,result)
-        
-        return result
+        while r in range(ROWS) and c in range(COLS):
+            if matrix[r][c] == target: return True
+            elif matrix[r][c] < target: r+=1
+            else: c-=1
+
+        return False
