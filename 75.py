@@ -1,4 +1,4 @@
-# Sort Colors : in-place and constant space solution
+# Sort Colors : in-place, O(n) time, O(1) space
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
         counts = [0]*3
