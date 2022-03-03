@@ -1,4 +1,4 @@
-# Valid Sudoku - Naive Solution
+# Valid Sudoku - Naive 
 class Solution:
     def check_row(self,board,r):
         numSet = set()
