@@ -1,5 +1,4 @@
 # Insert Interval
-
 class Solution:
     def earlier_intervals(self,intervals,newInterval):
         ret = []
