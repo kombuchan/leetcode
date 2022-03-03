@@ -1,5 +1,4 @@
 # Search a 2D Matrix II
-
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         ROWS,COLS = len(matrix),len(matrix[0])
