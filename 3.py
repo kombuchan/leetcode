@@ -1,24 +1,4 @@
 # Longest Substring Without Repeating Characters 
-
-# NAIVE 
-# 
-# class Solution:
-#     def lengthOfLongestSubstring(self, s: str) -> int:
-#         longestSubstr = 0
-#         for i in range(len(s)):
-#             seen = set()
-#             substr = ''
-#             j = i
-#             while j < len(s) and s[j] not in seen:
-#                 seen.add(s[j])
-#                 substr += s[j]
-#                 j+=1
-#             print(substr)
-#             if len(substr) > longestSubstr : longestSubstr = len(substr)
-#         return longestSubstr
-
-
-
 # OPTIMAL - Sliding window + set
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
