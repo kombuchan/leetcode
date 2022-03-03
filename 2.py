@@ -1,5 +1,4 @@
 # Add two numbers
-
 x = int(input())
 c=0
 i=0
