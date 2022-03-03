@@ -1,6 +1,5 @@
 # Decode Ways
 # Naive approach (recursive):
-
 class Solution:
     def numDecodings(self, s: str) -> int:
         ret = self.recurse(s,"",0,set())
