@@ -8,9 +8,6 @@ class Solution:
             else: users[name] = set(i[1:])
         visited = set()
         
-        print(users)
-        print("-----------------------")
-        
         length,n = len(users),len(users)
         
         for i in users:
@@ -20,10 +17,6 @@ class Solution:
                     for j in users[i]: users[original].add(j)
                     users[i] = ""
                 else: visited.add(email)
-                    
-        
-        print(users)
-        print("-----------------------")
         
         ret = []
         for i in users:
@@ -33,6 +26,5 @@ class Solution:
                 name = i.split("_dup")[0]
             ret.append([name] + sorted(list(users[i])))
             
-        
         return ret 
         
