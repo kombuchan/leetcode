@@ -1,5 +1,4 @@
 # 17. Letter Combinations of a Phone Number
-
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
         if digits == "" : return []
