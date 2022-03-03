@@ -1,5 +1,4 @@
 # Game of Life
-
 class Solution:
     def gameOfLife(self, board: List[List[int]]) -> None:
         for m in range(len(board)):
