@@ -1,17 +1,5 @@
 # Container With Most Water
-#
-# NAIVE APPROACH - O(N^2)
-# 
-# class Solution:
-#     def maxArea(self, height: List[int]) -> int:
-#         area = -float('inf')
-#         for i in range(len(height)):
-#             for j in range(i+1, len(height)):
-#                 a = (j-i)*min(height[i],height[j])
-#                 area = max(area,a)
-#         return(area)
-#
-# LINEAR TIME - O(N)
+
 class Solution:
     def maxArea(self, height: List[int]) -> int:
         area = -float('inf')
