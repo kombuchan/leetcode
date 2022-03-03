@@ -1,4 +1,4 @@
-# Repeated DNA Sequence
+# Repeated DNA Sequence 
 class Solution:
     def findRepeatedDnaSequences(self, s: str) -> List[str]:
         i,j = 0,10
