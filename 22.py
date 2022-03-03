@@ -1,5 +1,4 @@
 # Generate Parentheses
-
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         return self.recurse(n,'(',[])
