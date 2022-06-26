@@ -1,5 +1,5 @@
 # Longest Substring Without Repeating Characters 
-# OPTIMAL - Sliding window + set
+# OPTIMAL: Sliding window + set
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         seen = set()
