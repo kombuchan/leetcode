@@ -14,26 +14,9 @@ class Solution:
         i=len(s)-1
         while(i>=0):
             num = charDict[s[i]]
-            if i-1 >= 0:
-                if s[i] == 'V' and s[i-1] == 'I':
-                    num = 4
-                    i-=1
-                if s[i] == 'X' and s[i-1] == 'I':
-                    num = 9
-                    i-=1
-                if s[i] == 'L' and s[i-1] == 'X':
-                    num = 40
-                    i-=1
-                if s[i] == 'C' and s[i-1] == 'X':
-                    num = 90
-                    i-=1
-                if s[i] == 'D' and s[i-1] == 'C':
-                    num = 400
-                    i-=1
-                if s[i] == 'M' and s[i-1] == 'C':
-                    num = 900
-                    i-=1
-            
+            if i-1 >= 0 and charDict[s[i-1]] < num:
+                num = num - charDict[s[i-1]]
+                i -= 1
             ans += num
             i -= 1
             
